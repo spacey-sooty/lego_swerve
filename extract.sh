@@ -1,1 +1,1 @@
-mv target/armv5te-unknown-linux-musleabi/debug/rust_swerve boof/rust_swerve.exe
+mv target/armv5te-unknown-linux-musleabi/debug/rust_swerve boof/boof.exe
