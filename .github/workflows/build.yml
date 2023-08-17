@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "master", "beta" ]
+
+jobs:
+  Ubuntu:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --verbose
+
+  Windows:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --verbose
