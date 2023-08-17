@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Add Musleabi Target
+      run: rustup target add armv5te-unknown-linux-musleabi
     - name: Build
       run: cargo build --verbose
 
@@ -22,5 +24,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Add Musleabi Target
+      run: rustup target add armv5te-unknown-linux-musleabi
     - name: Build
       run: cargo build --verbose
